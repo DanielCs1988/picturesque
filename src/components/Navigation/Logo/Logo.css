@@ -1,0 +1,12 @@
+.logo {
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.logo img {
+    margin: 10% 0.5rem 0 0;
+    height: 80%;
+    width: auto;
+    box-shadow: none;
+}

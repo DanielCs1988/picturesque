@@ -1,0 +1,40 @@
+.form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-control label {
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+.form-control input:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+.valid input {
+    border: 1px solid green;
+}
+
+.invalid input {
+    border: 1px solid red;
+    background-color: #FDA49A;
+}

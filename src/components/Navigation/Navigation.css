@@ -1,0 +1,24 @@
+.navbar {
+    height: 4rem;
+    line-height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #26466D;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.navbar span {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 100%;
+    height: 100%;
+}

@@ -1,0 +1,15 @@
+.picture-details {
+    width: 30rem;
+    margin: 5rem auto;
+}
+.picture-details h2 {
+    text-align: center;
+}
+.picture-details .created-at {
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+.picture-wrapper {
+    height: 80%;
+    width: auto;
+}

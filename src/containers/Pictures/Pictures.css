@@ -1,0 +1,6 @@
+.pictures {
+    width: 65rem;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

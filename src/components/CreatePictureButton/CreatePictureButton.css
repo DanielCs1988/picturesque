@@ -1,0 +1,23 @@
+.create-picture-btn {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: green;
+    color: white;
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+.create-picture-btn:hover {
+    transition: 0.2s;
+    background-color: limegreen;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
