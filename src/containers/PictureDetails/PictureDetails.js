@@ -17,11 +17,11 @@ export class PictureDetails extends Component {
     }
 
     render() {
-        const { picture, deletePicture, history, match, pictureSaved } = this.props;
+        const { picture, loading, deletePicture, history, match, pictureSaved } = this.props;
         return (
             <RedirectIf shouldRedirect={pictureSaved} to="/pictures">
                 <div className="picture-details">
-                    <Load loading={!picture.id}>
+                    <Load loading={loading}>
                         <CreatePictureButton />
                         <h2>{picture.title}</h2>
                         <div className="picture-wrapper">
@@ -42,7 +42,7 @@ export class PictureDetails extends Component {
     }
 }
 
-const mapStateToProps = ({ pictures, pictureSaved }, props) => ({
+const mapStateToProps = ({ pictures, pictureSaved, loading }, props) => ({
     picture: pictures.find(picture => picture.id === props.match.params.id) || {},
     pictureSaved
 });

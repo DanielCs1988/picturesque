@@ -5,6 +5,7 @@ import {resetFormSaved} from "../../store/actions";
 import Picture from "../../components/Picture/Picture";
 import './Pictures.css';
 import CreatePictureButton from "../../components/CreatePictureButton/CreatePictureButton";
+import Load from "../../hoc/Load/Load";
 
 export class Pictures extends Component {
     componentDidMount() {
@@ -16,19 +17,19 @@ export class Pictures extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <Load loading={this.props.loading}>
                 <CreatePictureButton />
                 <div className="pictures">{
                     this.props.pictures.map(picture => (
                         <Picture key={picture.id} {...picture} />
                     ))
                 }</div>
-            </React.Fragment>
+            </Load>
         );
     }
 }
 
-const mapStateToProps = ({ pictures }) => ({ pictures });
+const mapStateToProps = ({ pictures, loading }) => ({ pictures, loading });
 
 const mapDispatchToProps = dispatch => ({
     fetchPictures: () => dispatch(fetchPictures()),

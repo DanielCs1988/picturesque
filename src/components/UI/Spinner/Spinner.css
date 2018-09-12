@@ -7,7 +7,9 @@
     height: 1em;
     border-radius: 50%;
     margin: 72px auto;
-    position: relative;
+    position: absolute;
+    top: 25%;
+    left: 45%;
     z-index: 600;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
