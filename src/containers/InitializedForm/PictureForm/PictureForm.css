@@ -1,4 +1,17 @@
 .picture-form {
-    width: 30rem;
+    width: 45rem;
     margin: 5rem auto;
+}
+.picture-form h2 {
+    text-align: center;
+}
+
+.column {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+}
+.column button {
+    width: 80%;
+    margin: 0 10%;
 }

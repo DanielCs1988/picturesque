@@ -7,6 +7,7 @@ import Load from "../../hoc/Load/Load";
 import Toolbar from "../../components/Toolbar/Toolbar";
 import CreatePictureButton from "../../components/CreatePictureButton/CreatePictureButton";
 import RedirectIf from "../../hoc/RedirectIf/RedirectIf";
+import ZoomingImage from "./ZoomingImage/ZoomingImage";
 
 export class PictureDetails extends Component {
     componentDidMount() {
@@ -24,7 +25,7 @@ export class PictureDetails extends Component {
                         <CreatePictureButton />
                         <h2>{picture.title}</h2>
                         <div className="picture-wrapper">
-                            <img src={picture.url} alt={picture.title} />
+                            <ZoomingImage url={picture.url} title={picture.title} />
                         </div>
                         <div className="created-at">
                             <Moment fromNow>{picture.createdAt}</Moment>

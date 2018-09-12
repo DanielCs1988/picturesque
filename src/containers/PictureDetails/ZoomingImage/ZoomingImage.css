@@ -1,0 +1,26 @@
+.zoom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    height: auto;
+    width: 80%;
+    margin: 0.5rem 10% 0 10%;
+    box-shadow: 1px 1px 10px 500px rgba(0, 0, 0, 0.8);
+    animation: zoom-in 0.5s ease-out;
+}
+@keyframes zoom-in {
+    0%{
+        opacity: 0;
+        transform: scale(0.5) translate3d(0,0,0);
+        box-shadow: none;
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translate3d(0,0,0);
+        box-shadow: 1px 1px 10px 500px rgba(0, 0, 0, 0.8);
+    }
+}
